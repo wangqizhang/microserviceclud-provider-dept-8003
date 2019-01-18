@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.atguigu.springcloud.entities.Dept;
-
+   
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface DeptClientService {
 	@RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
